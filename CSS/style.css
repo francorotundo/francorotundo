@@ -46,7 +46,8 @@ a{
 
 main {
     width: 100%;    
-    height: 635px;
+    height: calc(100vh - 160px);
+    
 }
 
 #particles-js {
@@ -63,7 +64,6 @@ footer {
     width: 100%;
     height: 100px;
     position: absolute-botton;
-    bottom: 0;
     display: grid;
     font-size: 14px;
     text-align: center;
