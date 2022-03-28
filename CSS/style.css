@@ -46,6 +46,8 @@ a{
 
 main {
     width: 100%;    
+    min-width: 800px;
+    min-height: 630px;
     height: calc(100vh - 160px);
     
 }
