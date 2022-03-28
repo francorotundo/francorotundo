@@ -45,8 +45,16 @@ a{
 }
 
 main {
+    width: 100%;    
+    height: 635px;
+}
+
+#particles-js {
     background-color: rgb(3, 21, 46);
-    height: 100%;
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 footer {
@@ -72,7 +80,7 @@ footer ul {
 footer ul li{
     text-align: center;
     display: inline-block;
-    padding: 5px;
+    padding: 0 30px;
 }
 
 .icon-git {
