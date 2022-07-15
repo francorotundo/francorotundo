@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #1C1C1E;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;   
+}
+
+.main-nav__item {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a{
+    color: #8B8B8B;
+    font-size: 20px;
+    padding: 20px; 
+    border-radius: 2px; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.main-nav__item a:hover 
+{
+    color: #63b3e4;
+
+}
+
+.main-nav__item a:active 
+{
+    color: red;
+}
+
+main {
+    width: 100%;    
+    min-width: 800px;
+    min-height: 630px;
+    height: calc(100vh - 160px);
+    
+}
+
+#particles-js {
+    background-color: rgb(3, 21, 46);
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+footer {
+    background-color: #1C1C1E;
+    color: #8B8B8B;
+    width: 100%;
+    height: 100px;
+    position: absolute-botton;
+    display: grid;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-section {
+    width: 100%;
+}
+
+footer ul {
+    margin-top: 20px;
+}
+
+footer ul li{
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.icon-git {
+    background-image: url("https://github.githubassets.com/apple-touch-icon-152x152.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+
+}
+
+
+.icon-face {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/WP_SOPA_sm_icon_facebook_ffffff.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+.icon-in {
+    background-image: url("https://www.pngplay.com/wp-content/uploads/12/LinkedIn-Download-Free-PNG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
