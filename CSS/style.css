@@ -44,7 +44,7 @@ nav ul li a::after{
     content: " ";
     width: 0%;
     height: 3px;
-    background: #2768bd;
+    background: #0077a4;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -60,20 +60,21 @@ nav ul li a:hover::after {
     display: grid;
     place-items: center;
     margin-top: 50px;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 .header-text img {
+    width: 100%;
     margin-bottom: 50px;
 }
 
 .header-text-2 {
-    font-size: 4rem;
-    color:#2768bd;
+    font-size: 2.2rem;
+    color: #0077a4;
 }
 
 .header-text-3 {
     margin-top: 5px;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
