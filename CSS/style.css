@@ -8,3 +8,72 @@ html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    background-color: #1a2022;
+    color: #fff;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    justify-content: end;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+    position: relative;
+
+}
+
+nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background: #2768bd;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    font-size: 3.5rem;
+}
+
+.header-text img {
+    margin-bottom: 50px;
+}
+
+.header-text-2 {
+    font-size: 4rem;
+    color:#2768bd;
+}
+
+.header-text-3 {
+    margin-top: 5px;
+    font-size: 3rem;
+}
+
