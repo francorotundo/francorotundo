@@ -6,29 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francisco Rotundo</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" href="CSS/tablet2.css" media="screen and (min-width: 650px)">
     <link rel="stylesheet" href="CSS/desktop.css" media="screen and (min-width: 1080px)"> 
+    <script src="https://kit.fontawesome.com/29fc67e3df.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container"> 
             <nav>
                 <!-- <img src="" alt="logo"> -->
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <img src="./CSS/img/Imagen1.png" alt="">
+                <img src="./CSS/img/small_photo_BN.png" alt="">
                 <p>Hi!</p>
                 <p class="header-text-2"><strong>I'm Francisco Rotundo</strong></p>
                 <p class="header-text-3">Frontend & Backend Developer</p>
             </div>
         </div>
     </header>
+
+    
+    <main>
+    <!------------ About ----------->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <h1>About me</h1>
+                        <p>I'm Francisco Rotundo, Web Developer / Chemical graduate.<br>I am self-taught and passionate about programming, with excellent communication skills. I love collaborating and working as a team.
+                         I am currently looking for an internship or job opportunity where I can apply my knowledge and skills to continue improving, as well as allowing me to meet professionals whom I can observe and emulate.</p>
+
+                        <div class="container-cv"><a class="download-cv" href="https://drive.google.com/file/d/1iaoW7RjQNsfVyqM95p3Njf33vcC2YVAr/view?usp=sharing"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>Download CV</a></div>
+
+                    </div>
+                    <div class="about-col-2">
+                        <div class="tab-tibles">
+                        <h1 class="tab-links active-link" onclick="opentab('skills')">Skills</h1>
+                        <h1 class="tab-links" onclick="opentab('education')">Education</h1>
+                    </div>
+                        
+                    <div class="tab-contents skill-container active-tab" id="skills">
+                        <div class="skill__item">
+                            <img class="fa-brands" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG39vC0OYNKZgy9n6I6GvQlTxtC_nHw84pCA&usqp=CAU">
+                            <p><strong>Html5</strong></p>
+                        </div>     
+                            
+                        <div class="skill__item">
+                            <img class="fa-brands" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVKakz3q-wODLmgbDNjqLkud3MF3ty0ujN4w&usqp=CAU">
+                            <p><strong>CSS3</strong></p>
+                        </div> 
+                        <div class="skill__item">
+                            <i class="fa-brands fa-js"></i>
+                            <p><strong>Java Script</strong></p>
+                        </div> 
+
+                        <div class="skill__item">                                
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <p><strong>Bootstrap</strong></p>
+                        </div>
+
+                        <div class="skill__item">
+                            <img  class="fa-brands" src="https://seeklogo.com/images/P/python-logo-A32636CAA3-seeklogo.com.png" alt="">
+                            <p><strong>Python</strong></p>
+                        </div>  
+                        <div class="skill__item">
+                            <img  class="fa-brands" src="https://styles.redditmedia.com/t5_2qh4v/styles/communityIcon_r1rcce3bp1241.png" alt="">
+                            <p><strong>Django</strong></p>
+                        </div> 
+                        <div class="skill__item">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <p><strong>GIT</strong></p>
+                        </div> 
+                        <div class="skill__item">
+                            <i class="fa-brands fa-github"></i>
+                            <p><strong>GitHub</strong></p>
+                        </div> 
+                    </div>    
+
+                    <div class="tab-contents education-item" id="education">
+                        <div class="skill__item">
+                            <a href="https://platzi.com/p/francorotundo90/"><img  class="fa-brands" src="https://media-exp2.licdn.com/dms/image/C560BAQHGhmUtkni2GQ/company-logo_100_100/0/1622072579516?e=1666224000&v=beta&t=mKjYUEH8TJzVagVu4QYfrmP7SrAIYtCZIZHsjiRsM5I" alt="logo-platzi">
+                            <p><strong>Platzi</strong></p></a>
+                            
+                        </div>  
+                        <div class="skill__item">
+                            <a href="https://www.udemy.com/certificate/UC-a910dbe5-5bf9-42c7-b43a-e246f6aaf00d/"><img  class="fa-brands" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="logo-udemy">
+                            <p><strong>Udemy</strong></p></a>
+                        </div> 
+                        <div class="skill__item">
+                            <a href="https://drive.google.com/file/d/1qFgUKSQ0Q4I0kSScB4vSzlTqZtyLOazM/view?usp=sharing"><img  class="fa-brands" src="https://media-exp2.licdn.com/dms/image/C4E0BAQFgocdTGHthDA/company-logo_100_100/0/1581351014172?e=1666224000&v=beta&t=Fdbrvdxr5WMJRjyMgZknFF4-q4NNj6R-o9VsYcFETYE" alt="logo-cisco">
+                            <p><strong>Cisco Networking Academy</strong></p></a>
+                        </div> 
+                        <div class="skill__item">
+                            <img  class="fa-brands" src="https://media-exp2.licdn.com/dms/image/C560BAQEqH4pTb_C3Vg/company-logo_100_100/0/1519856172195?e=1666224000&v=beta&t=aw2eZqooGSawchomZdQ_G9yaIl1GBWAtRp_7Hz21G0w" alt="logo-ucv">
+                            <p><strong>Universidad Central de Venezuela</strong></p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!------------ Services ----------->
+        <section id="services">
+
+        </section>
+
+    </main>
+
+    <script src="./js/style.js"></script>
 </body>
 </html>

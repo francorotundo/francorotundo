@@ -5,7 +5,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url("./img/PhotoRoom-20220715_210959\ \(1\)\ \(2\).png");
+    background-image: url("./img/large_photo_BN.png");
     background-size: cover;    
     background-repeat: no-repeat;
 }
@@ -16,5 +16,21 @@ header {
 }
 
 .header-text img {
+    display: none;
+}
+
+/* <!------------ About -----------> */
+
+.about-col-1, .about-col-2 {
+    flex-basis: 45%;
+}
+
+.tab-contents.active-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.tab-contents {
     display: none;
 }
