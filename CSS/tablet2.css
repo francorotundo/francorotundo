@@ -9,3 +9,13 @@
 .header-text-3 {
     font-size: 3rem;
 }
+
+.tab-contents.active-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.tab-contents {
+    display: none;
+}

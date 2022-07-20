@@ -10,8 +10,12 @@
     font-size: 2.5rem;
 }
 
-.skill-container {
+.tab-contents.active-tab {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+}
+
+.tab-contents {
+    display: none;
 }

@@ -52,9 +52,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 1.8rem;
-    color: var(--white);
+    color: #c2bdbd;
     position: relative;
 
+}
+
+nav ul li a:hover {
+    color: var(--white)
 }
 
 nav ul li a::after{
@@ -100,7 +104,7 @@ nav ul li a:hover::after {
 
 /* <!------------ About -----------> */
 #about {
-    padding-top: 60px;
+    padding-top: 30px;
     color: var(--grey);
     background-color: var(--white);
 }
@@ -114,8 +118,12 @@ nav ul li a:hover::after {
     width: 100%;
     min-width: 250px;
     color:var(--black);
+    padding-top: 30px;
     padding-bottom: 60px;
+}
 
+.about-col-1 {
+    border-bottom: 2px rgb(190, 190, 190) solid ;
 }
 
 .tab-tibles {
@@ -145,9 +153,15 @@ nav ul li a:hover::after {
 }
 
 #about h1 {
-    font-size: 3rem;
-    /* font-weight: 500; */
     margin-bottom: 20px;
+}
+
+.about-col-1 h1 {
+    font-size: 4rem;
+}
+
+.about-col-2 h1 {
+    font-size: 3rem;
 }
 
 #about p {
@@ -254,4 +268,84 @@ nav ul li a:hover::after {
 .education-item a:hover {
     opacity: 80%;
     transition: 0.5s;
+}
+
+/* --------------- Services ------------- */
+
+#services {
+    padding: 60px 0;
+    background-color: #000;
+    
+}
+
+.services-list {
+    display: grid;
+    /* place-content: center;
+    width: 250px; */
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.services-container {
+    /* border: 1px solid gray; */
+    min-width: 250px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(37, 37, 37);
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-container:hover {
+    background: #4e8aa0;
+    transform: translateY(-10px);
+}
+
+#services h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.service_item {
+    width: 200px;
+    font-size: 40px;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.service_item:hover {
+    color: var(--white);
+}
+
+.services-container h2 {
+    font-size: 2.5rem;
+}
+.services-container p {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+/* --------------Portfolio------------ */
+
+#portfolio {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+#portfolio h1 {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.work-list img {
+    
 }
