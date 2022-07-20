@@ -41,6 +41,7 @@ nav {
     right: 0;
     background-color: #000;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul li {
@@ -227,7 +228,7 @@ nav ul li a:hover::after {
 
 
 
-.download-cv {
+.download-cv, .btn {
     padding: 20px;
     height: auto;
     background-color: var(--blue);
@@ -240,7 +241,7 @@ nav ul li a:hover::after {
     box-shadow: 0px 4px 8px rgba(3, 3, 1, 0.4);
 }
 
-.download-cv:hover {
+.download-cv:hover, .btn:hover {
     opacity: 80%;
     transition: 0.5s;
 }
@@ -342,10 +343,80 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
 }
 
-.work-list img {
-    
+.work {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.work img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work-description {
+    width: 100%;
+    height: 0;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0,0,0,0.3),var(--blue)) ;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: height 0.5s;
+}
+
+.work:hover .work-description {
+    height: 100%;
+}
+
+.work-description h3 {
+    font-size: 2rem;
+}
+
+.work-description p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.work-description a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 7px;
+    color: var(--white);
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.work-description .fa-brands, .work-description .fa-solid {
+    color: var(--white);
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+}
+
+.btn {
+    display: block;
+    margin: 60px auto 0;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
 }
