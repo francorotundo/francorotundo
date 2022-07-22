@@ -20,6 +20,27 @@
     display: none;
 }
 
+.sub-title {
+    font-size: 4rem;
+}
+
+#about p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.about-col-2 h1 {
+    font-size: 3rem;
+}
+
+.services-container h2 {
+    font-size: 2.5rem;
+}
+.services-container p {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
 .work-list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
