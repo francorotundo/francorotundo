@@ -12,16 +12,16 @@
     <script src="https://kit.fontawesome.com/29fc67e3df.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header">
+    <header class="section" id="header">
         <div class="container"> 
             <nav>
                 <h1>FR</h1>
                 <ul id="sidemenu">
-                    <li class="menu_item" data-url="home"><a href="#header">Home</a></li>
-                    <li class="menu_item" data-url="about"><a href="#about">About</a></li>
-                    <li class="menu_item" data-url="services"><a href="#services">Services</a></li>
-                    <li class="menu_item" data-url="portfolio"><a href="#portfolio">Portfolio</a></li>
-                    <li class="menu_item" data-url="contact"><a href="#contact">Contact</a></li>
+                    <li><a class="active menu_item" data-url="header" href="#header">Home</a></li>
+                    <li><a class="menu_item" data-url="about" href="#about">About</a></li>
+                    <li><a class="menu_item" data-url="services" href="#services">Services</a></li>
+                    <li><a class="menu_item" data-url="portfolio" href="#portfolio">Portfolio</a></li>
+                    <li><a class="menu_item" data-url="contact" href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -38,7 +38,7 @@
     
     <main>
     <!------------ About ----------->
-        <section id="about">
+        <section class="section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
@@ -117,7 +117,7 @@
         </section>
     
     <!------------ Services ----------->
-        <section id="services">
+        <section class="section" id="services">
             <div class="container">
                 <h1 class="sub-title">My Services</h1>
                 <div class="services-list">
@@ -150,7 +150,7 @@
         </section>
 
         <!------------ Portfolio ----------->
-        <section id="portfolio">
+        <section class="section" id="portfolio">
             <div class="container">
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="work">
+                    <!-- <div class="work">
                         <img src="./CSS/img/eat4nutrition.jpg" alt="">
                         <div class="work-description">
                             <h3>Eat for Nutrition website</h3>
@@ -208,14 +208,14 @@
                                 <a href=""><i class="fa-brands fa-github"></i>Repositorio</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <a class="btn" href="https://github.com/francorotundo">More Repositories</a>
             </div>
         </section>
     
         <!------------ Contact ----------->
-        <div id="contact">
+        <section class="section" id="contact">
             <div class="container">
             
                 <div class="row">
@@ -238,14 +238,15 @@
 
                             <textarea name="Message" rows="4" placeholder="Your message" required></textarea>
 
-                            <button class="btn btn2" type="submit">Submit</button>
+                            <button class="btn btn2" type="submit"><i class="fa-solid fa-paper-plane"></i>  Send</button>
 
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </section>
 
     </main>
     <footer class="copyright">
@@ -254,8 +255,8 @@
     </footer>
     <script src="./js/style.js"></script>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycby3qKLi1D80-cKmjyUiPlcRTa97KyHlzX69qJNxzsGElu-QsCPfOTvWoqHUyZcFIl3p/exec'
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCxzhxYx3O_jMx5ZFQi3mpUAJV_u1rkaUGFt5mEHAQ9bjXNcp5ST3RatEnsowMrgIX5Q/exec'
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
@@ -264,6 +265,6 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script> -->
 </body>
 </html>

@@ -106,8 +106,9 @@ nav ul li a {
 
 }
 
-nav ul li a:hover {
-    color: var(--white)
+nav ul li a:hover , .active {
+    color: var(--white);
+    font-weight: bold;
 }
 
 nav ul li a::after{
@@ -294,7 +295,7 @@ nav ul li a:hover::after {
 
 .download-cv:hover, .btn:hover {
     
-    transition: 0.3s;
+    transition: 0.05s;
     transform: translateY(-4px);
 }
 
@@ -552,13 +553,19 @@ nav ul li a:hover::after {
     cursor: pointer;
 }
 
-/* .btn:hover:active {
+.btn:hover:active {
     transform: translateY(-2px);
-} */
+}
 
 footer {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.2rem;
+}
+
+#msg {
+    color: #61b752;
+    font-size: 1.4rem;
+    display: block;
 }
