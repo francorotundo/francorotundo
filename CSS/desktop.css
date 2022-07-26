@@ -28,7 +28,7 @@ nav ul {
     right: 0;
     width: auto;
     height: auto;
-    padding-top: 5px;
+    padding-top: 0px;
     z-index: 1;
     transition: none;
 }

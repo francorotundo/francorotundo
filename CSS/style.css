@@ -34,10 +34,10 @@ body {
 }
 
 nav {
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 5px 10% 0;
+    padding: 10px 10% 0;
     position: fixed;
     top:0;
     right: 0;
@@ -137,6 +137,7 @@ nav ul li a:hover::after {
 .header-text img {
     width: 100%;
     max-width: 500px;
+    margin-top: 30px;
     margin-bottom: 50px;
     border-radius: 50%;
 }
