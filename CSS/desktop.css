@@ -67,8 +67,5 @@ nav ul li {
 .social-icons {
     border-bottom: none;
 }
-.work-list {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
 
 

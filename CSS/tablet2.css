@@ -9,17 +9,3 @@
 .header-text-3 {
     font-size: 3rem;
 }
-
-.tab-contents.active-tab {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.work-list {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}

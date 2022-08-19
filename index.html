@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/tablet.css" media="screen and (min-width: 500px)">
     <link rel="stylesheet" href="CSS/tablet2.css" media="screen and (min-width: 650px)">
     <link rel="stylesheet" href="CSS/desktop.css" media="screen and (min-width: 1080px)"> 
+    <link rel="stylesheet" href="./CSS/calculator-styles.css">
     <script src="https://kit.fontawesome.com/29fc67e3df.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,9 +23,9 @@
                     <li><a class="menu_item" data-url="services" href="#services">Services</a></li>
                     <li><a class="menu_item" data-url="portfolio" href="#portfolio">Portfolio</a></li>
                     <li><a class="menu_item" data-url="contact" href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i id="closeMenu" class="fa-solid fa-xmark"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i id="openMenu" class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-text">
                 <img src="./CSS/img/small_photo_BN.png" alt="">
@@ -32,6 +33,7 @@
                 <p class="header-text-2"><strong>I'm Francisco Rotundo</strong></p>
                 <p class="header-text-3">Frontend & Backend Developer</p>
             </div>
+            <a class="top" href="#header"><i class="fa-solid fa-angles-up"></i></a>
         </div>
     </header>
 
@@ -45,7 +47,7 @@
                         <h1 class="sub-title">About me</h1>
                         <p>I'm Francisco Rotundo, Frontend & Backend Developer / Bachelor of Chemistry. <br>
                             I am self-taught and passionate about programming, with excellent communication skills. I love collaborating and working as a team.
-                            <!-- Previously, I worked for 5 years during my bachelor's degree in chemistry as an Instrumental Analysis Laboratory Assistant, and just before migrating from my native country Venezuela, I worked in the CEIFA quality control laboratory, as an analyst. -->
+                            Previously, I worked for 5 years during my bachelor's degree in chemistry as an Instrumental Analysis Laboratory Assistant, and just before migrating from my native country Venezuela, I worked in the CEIFA quality control laboratory, as an analyst.
                             I am currently looking for an internship or full-time job opportunity where I can apply my knowledge and skills to keep improving.</p>
 
                         <div class="container-cv"><a class="download-cv" download href="https://drive.google.com/file/d/1iaoW7RjQNsfVyqM95p3Njf33vcC2YVAr/view?usp=sharing"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>Download CV</a></div>
@@ -107,11 +109,11 @@
                         </div> 
                         <div class="skill__item">
                             <a href="https://drive.google.com/file/d/1qFgUKSQ0Q4I0kSScB4vSzlTqZtyLOazM/view?usp=sharing"><img  class="fa-brands" src="https://media-exp2.licdn.com/dms/image/C4E0BAQFgocdTGHthDA/company-logo_100_100/0/1581351014172?e=1666224000&v=beta&t=Fdbrvdxr5WMJRjyMgZknFF4-q4NNj6R-o9VsYcFETYE" alt="logo-cisco">
-                            <p><strong>Cisco Networking Academy</strong></p></a>
+                            <p><strong>Cisco</strong></p></a>
                         </div> 
                         <div class="skill__item">
                             <img  class="fa-brands" src="https://media-exp2.licdn.com/dms/image/C560BAQEqH4pTb_C3Vg/company-logo_100_100/0/1519856172195?e=1666224000&v=beta&t=aw2eZqooGSawchomZdQ_G9yaIl1GBWAtRp_7Hz21G0w" alt="logo-ucv">
-                            <p><strong>Universidad Central de Venezuela</strong></p>
+                            <p><strong>UCV</strong></p>
                         </div> 
                     </div>
                 </div>
@@ -157,6 +159,28 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
+                        <img src="./CSS/img/calculatorsInterface.jpg" alt="Calculator for chemistry">
+                        <div class="work-description">
+                            <h3>Calculator for chemistry</h3>
+                            <p>WebApp: CSS y Javascript</p>
+                            <div class="work-link">
+                                <a class="calc" onclick=renderCalc()><i class="fa-solid fa-arrow-up-right-from-square"></i>website</a>
+                                <a href="https://github.com/francorotundo/cisfitgym"><i class="fa-brands fa-github"></i>Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./CSS/img/cisfitgym.jpg" alt="Cisfitgym project">
+                        <div class="work-description">
+                            <h3>CISFITGYM</h3>
+                            <p>Website: Bootstrap, HTML, CSS y Javascript</p>
+                            <div class="work-link">
+                                <a href="https://francorotundo.github.io/cisfitgym"><i class="fa-solid fa-arrow-up-right-from-square"></i>website</a>
+                                <a href="https://github.com/francorotundo/cisfitgym"><i class="fa-brands fa-github"></i>Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
                         <img src="./CSS/img/DemoBootstrap.jpg" alt="Tech Conf project">
                         <div class="work-description">
                             <h3>Tech Conf</h3>
@@ -171,7 +195,7 @@
                         <img src="./CSS/img/eat4nutrition.jpg" alt="Eat for nutrition project">
                         <div class="work-description">
                             <h3>Eat for Nutrition</h3>
-                            <p>Website: HTTP y CSS</p>
+                            <p>Website: HTML y CSS</p>
                             <div class="work-link">
                                 <a href="https://www.eat4nutrition.com"><i class="fa-solid fa-arrow-up-right-from-square"></i>website</a>
                                 <a href="https://github.com/francorotundo/eatfornutrition"><i class="fa-brands fa-github"></i>Repository</a>
@@ -182,7 +206,7 @@
                         <img src="./CSS/img/batatabit.jpg" alt="Batatabit project">
                         <div class="work-description">
                             <h3>Batatabit</h3>
-                            <p>Website: HTTP y CSS</p>
+                            <p>Website: HTML y CSS</p>
                             <div class="work-link">
                                 <a href="https://francorotundo.github.io/MobileFirst-Batatabit/"><i class="fa-solid fa-arrow-up-right-from-square"></i>website</a>
                                 <a href="https://github.com/francorotundo/MobileFirst-Batatabit"><i class="fa-brands fa-github"></i>Repository</a>
@@ -193,7 +217,7 @@
                         <img src="./CSS/img/google_clone.jpg" alt="google clone project">
                         <div class="work-description">
                             <h3>Google Clone</h3>
-                            <p>Website: HTTP y CSS</p>
+                            <p>Website: HTML y CSS</p>
                             <div class="work-link">
                                 <a href="https://francorotundo.github.io/google_clone"><i class="fa-solid fa-arrow-up-right-from-square"></i>website</a>
                                 <a href="https://github.com/francorotundo/google_clone"><i class="fa-brands fa-github"></i>Repository</a>
@@ -212,8 +236,8 @@
                 <div class="row">
                     <div class="col-left">
                         <h1 class="sub-title">Contact me</h1>
-                        <p><i class="fa-solid fa-envelope"></i>francorotundo90@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>+56 930537492</p>
+                        <a href="mailto:francorotundo90@gmail.com"><i class="fa-solid fa-envelope"></i>francorotundo90@gmail.com</a>
+                        <a class="wt" href="http://wa.me/+56930537492" ><i class="fa-brands fa-whatsapp"></i>+56 930537492</a>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/franciscorotundo/"><i class="fa-brands fa-linkedin-in"></i></a>
                             <a href="https://github.com/francorotundo"><i class="fa-brands fa-github"></i></a>
@@ -239,23 +263,25 @@
             </div>
         </section>
 
+        <div id="calculatorsInterface" class="calculators inactive">
+            <i class="fa-solid fa-arrow-right-from-bracket calculators-exit"></i>
+            <div>
+                <h2>Calculators for chemistry</h2>
+                <p class="p1">Weight weight percentage calculator</p>
+                <p class="p2">Weight volume percentage calculator</p>
+                <p class="p3">Volume volume percentage calculator</p>
+            </div>
+            
+        </div>
+
+        <div class="WWP inactive"></div>
+
     </main>
     <footer class="copyright">
         <p>Copyright © Franco Rotundo. Made with <i class="fa-solid fa-heart"></i></p>
 
     </footer>
     <script src="./js/style.js"></script>
-
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCxzhxYx3O_jMx5ZFQi3mpUAJV_u1rkaUGFt5mEHAQ9bjXNcp5ST3RatEnsowMrgIX5Q/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script> -->
+    <script src="./js/calculators.js"></script>
 </body>
 </html>

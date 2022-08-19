@@ -27,6 +27,11 @@ html {
 body {
     background-color: var(--black);
     color: var(--white);
+    position: relative;
+}
+
+header {
+    position: relative;
 }
 
 .container {
@@ -153,6 +158,34 @@ nav ul li a:hover::after {
     margin-bottom: 60px;
 }
 
+.top {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 20%;
+    z-index: 2;
+}
+
+.top:hover {
+    transition: transform 0.3s;
+    transform: translateY(-5px);
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.top:hover:active {
+    transition: transform 0.2s;
+    transform: translateY(-2px);
+}
+
+.top i {
+    font-size: 2rem;
+}
+
 /* <!------------ About -----------> */
 #about {
     padding-top: 30px;
@@ -228,11 +261,6 @@ nav ul li a:hover::after {
     padding-top: 30px;
     display: flex;
     justify-content: center;
-}
-.skill-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
 }
 
 .skill__item {
@@ -313,9 +341,10 @@ nav ul li a:hover::after {
 }
 .tab-contents.active-tab {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
     gap: 50px;  
     text-align: center;
+    place-content: center;
 }
 
 .education-item a {
@@ -382,6 +411,7 @@ nav ul li a:hover::after {
 /* --------------Portfolio------------ */
 
 #portfolio {
+    width: 100%;
     padding: 60px 0;
     background-color: var(--white);
 }
@@ -391,13 +421,18 @@ nav ul li a:hover::after {
 }
 
 .work-list {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    place-content: center;
     gap: 40px;
     margin-top: 60px;
+    padding: 0 10%;
 }
 
 .work {
+    max-width: 350px;
+    max-height: 200px;
     border-radius: 15px;
     position: relative;
     overflow: hidden;    
@@ -406,9 +441,11 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
     display: block;
     transition: transform 0.5s;
+    object-fit: conver;
 }
 
 .work:hover img {
@@ -455,6 +492,11 @@ nav ul li a:hover::after {
     border: 1px solid white;
     border-radius: 5px;
 }
+
+.work-description a:hover {
+    background-color: var(--blue);
+}
+
 .work-description .fa-brands, .work-description .fa-solid {
     color: var(--white);
     font-size: 2rem;
@@ -479,17 +521,32 @@ nav ul li a:hover::after {
 
 .col-left {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.col-left p {
+.col-left a {
     padding-top: 30px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--white);
 }
 
-.col-left p i {
+.col-left .wt .fa-brands {
+    width: auto;
+    height: auto;
+}
+
+.col-left a i {
     color: var(--blue);
     margin-right: 10px;
     font-size: 2rem;
+}
+
+.col-left a i:hover {
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+    color: var(--white);
 }
 
 .social-icons {

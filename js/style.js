@@ -1,18 +1,21 @@
 // ------- menu responsive -------
-
+const openM = document.getElementById("openMenu");
+const closeM = document.getElementById("closeMenu");
 var sidemenu = document.getElementById("sidemenu");
 
+openM.addEventListener("click", openmenu);
 function openmenu(){
     sidemenu.style.right="0";
 }
 
+closeM.addEventListener("click", closemenu);
 function closemenu(){
     sidemenu.style.right = "-150px";
 }
 
 // ------- section skills and education ----------
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab (tabname) {
     for(tablink of tablinks){
