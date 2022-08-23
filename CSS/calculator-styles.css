@@ -70,40 +70,56 @@
 /* ---------------Calculator %w/w--------------- */
 
 
-.calculadoraPP{
+.calculadoraPP, .calculadoraVV, .calculadoraWV  {
     font-family: 'Times New Roman', Times, serif;
     position: fixed;
     width: 300px;
-    height: 480px;
-    background-image: url(./img/sand-blue.jpg);
     background-image: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     border-radius: 10px;
-    top: calc(50% - 215px);
     left: calc(50% - 150px);
+    padding: 35px 25px;
     z-index: 3;
 }
 
-.calculadoraPP .containerExit {
+.calculadoraPP {
+    height: 430px;
+    top: calc(50% - 215px);
+    background-image: url(./img/sand-blue.jpg);
+}
+
+.calculadoraWV {
+    height: 540px;
+    background-image: url(./img/solution-blue.jpg);
+    top: calc(50% - 270px);
+}
+
+.calculadoraVV {
+    height: 430px;
+    top: calc(50% - 215px);
+    background-image: url(./img/solution2.jpg);
+}
+
+.calculadoraPP .containerExit, .calculadoraVV .containerExit, .calculadoraWV .containerExit {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
 }
 
-.calculadoraPP .containerExit i {
+.calculadoraPP .containerExit i, .calculadoraVV .containerExit i, .calculadoraWV .containerExit i {
     transform: rotate(180deg);
     cursor: pointer;
 }
 
-.container-calculadoraPP {
-    width: 300px;
-    height: 430px;
-    padding: 35px 25px;
+.container-calculadoraPP, .container-calculadoraVV, .container-calculadoraVV {
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
 }
 
-.calculadoraPP h3 {
+.calculadoraPP h3, .calculadoraVV h3, .calculadoraWV h3 {
     text-align: center;
     font-size: 2.4rem;
 }
@@ -122,7 +138,7 @@ input {
     border-radius: 2px;
 }
 
-.calculadoraPP form {
+.calculadoraPP form, .calculadoraVV form, .calculadoraWV form  {
     display: flex;
     justify-content: center;
     flex-direction: column;
